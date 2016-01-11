@@ -14,6 +14,6 @@ blah.insert("hello", count: 7)
 blah.remove("bye", count: 5)
 ```
 
+`Bag` is a `CollectionType` that may contain multiple copies of each element. For example, mapping `print` over `["hi" : 3]` will print "hi" three times.
+
 Since `Bag` is a multiset, you can perform common set operations on it, such as `union`, `subtract`, and `intersect`. Further, you can check if a given `Bag` is a superset of, subset of, or is disjoint with another `Bag`.
-
-
