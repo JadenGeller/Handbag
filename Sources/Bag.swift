@@ -20,6 +20,7 @@ extension Bag {
             return backing[element] ?? 0
         }
         set {
+            precondition(newValue >= 0, "Bag cannot contain a negative count of a given element.")
             backing[element] = (newValue == 0) ? nil : newValue
         }
     }
